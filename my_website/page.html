@@ -5,19 +5,16 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Portfolio - Aidana Zhumabaeva</title>
 
-  <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
     rel="stylesheet"
   >
-  <!-- Font Awesome -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
   >
 
   <style>
-    /* 1. GENERAL RESET & BASE STYLING */
     * {
       margin: 0;
       padding: 0;
@@ -26,7 +23,7 @@
     body {
       font-family: 'Poppins', sans-serif;
       color: #ffffff;
-      background: #151e1a; /* matte dark green background */
+      background: #151e1a; 
       position: relative;
       min-height: 100vh;
       scroll-behavior: smooth;
@@ -37,7 +34,6 @@
       color: inherit;
     }
 
-    /* 2. OPTIONAL BACKGROUND OVERLAY/IMAGE */
     body::before {
       content: "";
       position: fixed;
@@ -48,11 +44,10 @@
       background: url('https://images.unsplash.com/photo-1665675469995-488486b62d6f?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
         no-repeat center center / cover;
       background-blend-mode: overlay;
-      background-color: rgba(21, 30, 26, 0.6); /* greenish overlay */
+      background-color: rgba(21, 30, 26, 0.6); 
       z-index: -999;
     }
 
-    /* 3. NAVIGATION */
     nav {
       position: fixed;
       top: 0;
@@ -79,13 +74,12 @@
       transition: color 0.3s ease;
     }
     nav a:hover {
-      color: #37966f; /* accent color */
+      color: #37966f; 
     }
     .active-link {
       border-bottom: 2px solid #37966f;
     }
 
-    /* 4. HERO SECTION */
     .hero {
       display: flex;
       flex-direction: column;
@@ -128,11 +122,10 @@
       font-weight: 600;
     }
     .hero button:hover {
-      background-color: #285e4d; /* darker hover color */
+      background-color: #285e4d; 
       transform: scale(1.08);
     }
 
-    /* DECORATIVE WAVE DIVIDER (OPTIONAL) */
     .wave {
       position: relative;
       height: 80px;
@@ -144,7 +137,6 @@
       left: 0;
     }
 
-    /* 5. SECTIONS BASE */
     section {
       padding: 80px 20px;
       max-width: 1200px;
@@ -155,7 +147,7 @@
     section h2 {
       font-size: 2.5rem;
       margin-bottom: 40px;
-      color: #37966f; /* accent */
+      color: #37966f; 
       position: relative;
       text-transform: uppercase;
       letter-spacing: 2px;
@@ -182,7 +174,7 @@
       backdrop-filter: blur(5px);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      text-align: left; /* left-align content inside the card for variety */
+      text-align: left; 
     }
     .project-card:hover {
       transform: translateY(-8px);
@@ -227,7 +219,6 @@
       margin: 0 auto;
     }
 
-    /* 8. CONTACT SECTION */
     .contact {
       display: flex;
       flex-direction: column;
@@ -249,7 +240,6 @@
       color: #285e4d;
     }
 
-    /* 9. FOOTER */
     footer {
       padding: 20px;
       background-color: rgba(21, 30, 26, 0.7);
@@ -275,7 +265,6 @@
       opacity: 0.8;
     }
 
-    /* 10. MEDIA QUERIES */
     @media (max-width: 768px) {
       .hero h1 {
         font-size: 2.5rem;
@@ -290,13 +279,12 @@
         margin-bottom: 10px;
       }
       .project-card {
-        text-align: center; /* revert to center for smaller screens if desired */
+        text-align: center; 
       }
     }
   </style>
 </head>
 <body>
-  <!-- NAVIGATION -->
   <nav id="navbar">
     <div class="logo">Portfolio</div>
     <div>
@@ -307,7 +295,6 @@
     </div>
   </nav>
 
-  <!-- HERO SECTION -->
   <div class="hero" id="hero">
     <img src="me.jpeg" alt="Aidana Zhumabaeva">
     <h1>Aidana Zhumabaeva</h1>
@@ -315,7 +302,6 @@
     <button onclick="window.open('AIDANA_ZHUM.pdf')">View My Resume</button>
   </div>
 
-  <!-- WAVE DIVIDER (OPTIONAL) -->
   <div class="wave">
     <svg
       viewBox="0 0 1440 320"
@@ -330,11 +316,9 @@
     </svg>
   </div>
 
-  <!-- PROJECTS SECTION -->
   <section id="projects">
     <h2>My Projects</h2>
     <div class="projects">
-      <!-- 1. Poisonous -->
       <div class="project-card">
         <img
           src="https://placehold.co/600x400/151e1a/37966f?text=Poisonous"
@@ -346,7 +330,6 @@
         <a href="https://github.com/lullabyell/Poisonous" target="_blank">View on GitHub</a>
       </div>
 
-      <!-- 2. Web Vulnerability Scanner -->
       <div class="project-card">
         <img
           src="https://placehold.co/600x400/151e1a/37966f?text=Web+Vulnerability+Scanner"
@@ -358,7 +341,6 @@
         <a href="https://github.com/lullabyell/Web-Vulnerability-Scanner" target="_blank">View on GitHub</a>
       </div>
 
-      <!-- 3. Network Traffic Monitor -->
       <div class="project-card">
         <img
           src="https://placehold.co/600x400/151e1a/37966f?text=Network+Traffic+Monitor"
@@ -370,7 +352,6 @@
         <a href="https://github.com/lullabyell/NetworkTrafficMonitor" target="_blank">View on GitHub</a>
       </div>
 
-      <!-- 4. Security Monitoring Microservice -->
       <div class="project-card">
         <img
           src="https://placehold.co/600x400/151e1a/37966f?text=Security+Microservice"
@@ -384,7 +365,6 @@
     </div>
   </section>
 
-  <!-- WAVE DIVIDER (OPTIONAL) -->
   <div class="wave">
     <svg
       viewBox="0 0 1440 320"
@@ -399,7 +379,6 @@
     </svg>
   </div>
 
-  <!-- ABOUT SECTION -->
   <section id="about">
     <h2>About Me</h2>
     <p>
@@ -409,7 +388,6 @@
     </p>
   </section>
 
-  <!-- WAVE DIVIDER (OPTIONAL) -->
   <div class="wave">
     <svg
       viewBox="0 0 1440 320"
@@ -424,7 +402,6 @@
     </svg>
   </div>
 
-  <!-- CONTACT SECTION -->
   <section id="contact">
     <h2>Contact Me</h2>
     <div class="contact">
@@ -440,7 +417,6 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <div class="social-icons">
       <a href="https://linkedin.com/in/aidana-zhumabaeva" target="_blank">
@@ -454,7 +430,6 @@
   </footer>
 
   <script>
-    // Highlight Active Nav Link on Scroll
     const navLinks = document.querySelectorAll('.nav-link');
     window.addEventListener('scroll', () => {
       let fromTop = window.scrollY + 100;
